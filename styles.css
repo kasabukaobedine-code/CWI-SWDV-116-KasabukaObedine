@@ -16,3 +16,51 @@ main p {
     font-size: 2rem;
     font-weight: bold;
 }
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+.featured-cars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.car-card {
+    width: 250px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.car-card img {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .car-card {
+        width: 90%;
+    }
+}
