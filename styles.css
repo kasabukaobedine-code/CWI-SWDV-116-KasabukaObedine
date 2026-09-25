@@ -27,9 +27,54 @@ nav {
     gap: 20px;
 }
 
-.hero img {
+.hero {
     width: 100%;
-    display: block;
+    height: 400px;
+    background-image: url("hero_1-320w.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+@media (min-width: 480px) {
+    .hero {
+        background-image: url("hero_1-480w.webp");
+    }
+}
+
+@media (min-width: 640px) {
+    .hero {
+        background-image: url("hero_1-640w.webp");
+    }
+}
+
+@media (min-width: 768px) {
+    .hero {
+        background-image: url("hero_1-768w.webp");
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero {
+        background-image: url("hero_1-1024w.webp");
+    }
+}
+
+@media (min-width: 1280px) {
+    .hero {
+        background-image: url("hero_1-1280w.webp");
+    }
+}
+
+@media (min-width: 1536px) {
+    .hero {
+        background-image: url("hero_1-1536w.webp");
+    }
+}
+
+@media (min-width: 1920px) {
+    .hero {
+        background-image: url("hero_1-1920w.webp");
+    }
 }
 
 .featured-cars {
