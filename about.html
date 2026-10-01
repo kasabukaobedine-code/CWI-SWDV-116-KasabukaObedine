@@ -9,6 +9,7 @@
     <title>Kasabuka's Car Rentals (About)</title>
 
     <link rel="icon" href="https://zany.sh/favicon.svg?text=KO">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -17,13 +18,34 @@
         <h1><a href="index.html">Kasabuka's Car Rentals</a></h1>
     </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="cars.html">Cars</a>
-        <a href="testimonials.html">Testimonials</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+    <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+        <i class="fa fa-home"></i> Home
+    </a>
+
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">
+        <i class="fa fa-bars"></i>
+    </label>
+
+    <div class="nav-links">
+        <a href="index.html">
+            <i class="fa fa-home"></i> Home
+        </a>
+        <a href="cars.html">
+            <i class="fa fa-car"></i> Cars
+        </a>
+        <a href="about.html">
+            <i class="fa fa-info-circle"></i> About
+        </a>
+        <a href="testimonials.html">
+            <i class="fa fa-comments"></i> Testimonials
+        </a>
+        <a href="contact.html">
+            <i class="fa fa-envelope"></i> Contact
+        </a>
+    </div>
+</nav>
 
     <main>
         <p>About Kasabuka's Car Rentals</p>
