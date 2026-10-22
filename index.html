@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SWDV-116 Lab 9">
+    <meta name="description" content="SWDV-116 Lab 10">
     <meta name="author" content="Kasabuka Obedine">
 
     <title>Kasabuka's Car Rentals</title>
@@ -65,6 +65,27 @@
         >
         <img src="hero_1.jpg" alt="Car rental">
     </picture>
+    <div class="rental-form-container">
+    <h2>Rent A Car Today</h2>
+
+    <form action="cars.html" method="GET">
+        <label for="type">Car Type</label>
+        <select name="type" id="type">
+            <option value="sedan">Sedan</option>
+            <option value="suv">SUV</option>
+            <option value="truck">Truck</option>
+            <option value="van">Van</option>
+        </select>
+
+        <label for="pickup">Pickup Date</label>
+        <input type="date" name="pickup" id="pickup">
+
+        <label for="return">Return Date</label>
+        <input type="date" name="return" id="return">
+
+        <button type="submit">Search</button>
+    </form>
+</div>
 </section>
 <main>
     <h2>Featured Cars</h2>

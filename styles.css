@@ -179,3 +179,38 @@ nav {
         padding: 10px;
     }
 }
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+}
+
+.rental-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left:50%; 
+    transform: translate(-50%, -50%);
+    padding: 25px;
+}
+
+.rental-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 350px;
+}
+
+.rental-form-container input,
+.rental-form-container select,
+.rental-form-container button {
+    padding: 10px;
+    font: inherit;
+}
