@@ -146,6 +146,51 @@
     document.addEventListener("DOMContentLoaded", function() {
         listCars();
     });
+    document.addEventListener("confirm-rental", function(event) {
+    const rental = event.detail;
+
+    const dialog = document.createElement("dialog");
+
+    const heading = document.createElement("h2");
+    heading.textContent = "Confirm Rental";
+
+    const car = document.createElement("p");
+    car.textContent = "Car Type: " + rental.carType;
+
+    const pickup = document.createElement("p");
+    pickup.textContent = "Start Date: " + rental.startDate;
+
+    const returnDate = document.createElement("p");
+    returnDate.textContent = "Return Date: " + rental.returnDate;
+
+    const confirmButton = document.createElement("button");
+    confirmButton.textContent = "Confirm";
+
+    const cancelButton = document.createElement("button");
+    cancelButton.textContent = "Cancel";
+
+    dialog.appendChild(heading);
+    dialog.appendChild(car);
+    dialog.appendChild(pickup);
+    dialog.appendChild(returnDate);
+    dialog.appendChild(confirmButton);
+    dialog.appendChild(cancelButton);
+
+    document.body.appendChild(dialog);
+
+    dialog.showModal();
+
+    confirmButton.addEventListener("click", function() {
+        dialog.close();
+        console.log(rental);
+        dialog.remove();
+    });
+
+    cancelButton.addEventListener("click", function() {
+        dialog.close();
+        dialog.remove();
+    });
+});
 </script>
 
 </body>

@@ -169,6 +169,22 @@ function displayCars(carArray) {
 
         carCard.appendChild(heading);
         carCard.appendChild(description);
+        const confirmButton = document.createElement("button");
+confirmButton.textContent = "Confirm Rental";
+
+confirmButton.addEventListener("click", function() {
+    const params = new URLSearchParams(window.location.search);
+
+    document.dispatchEvent(new CustomEvent("confirm-rental", {
+        detail: {
+            carType: car.type,
+            startDate: params.get("pickup"),
+            returnDate: params.get("return")
+        }
+    }));
+});
+
+carCard.appendChild(confirmButton);
 
         carList.appendChild(carCard);
     });
